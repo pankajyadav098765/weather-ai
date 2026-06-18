@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>🌤 Weather AI</h1>
+      <p>Get real‑time weather & smart recommendations</p>
+
+      <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter city..." />
+        <button id="searchBtn">Get Weather</button>
+      </div>
+      <div id="errorMessage" class="error hidden"></div>
+
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+      </div>
+
+      <div id="result" class="result hidden">
+        <div class="city-name"><span id="cityDisplay"></span></div>
+        <div class="weather-icon" id="iconDisplay">☀️</div>
+        <div class="temp"><span id="tempDisplay"></span>°C</div>
+        <div class="condition" id="conditionDisplay"></div>
+        <div class="feels" id="feelsDisplay"></div>
+
+        <div class="details">
+          <div><span>💧</span> <span id="humidityDisplay"></span></div>
+          <div><span>💨</span> <span id="windDisplay"></span></div>
+          <div><span>🌅</span> <span id="sunriseDisplay"></span></div>
+          <div><span>🌇</span> <span id="sunsetDisplay"></span></div>
+        </div>
+
+        <div class="recommendations">
+          <div><span>👕</span> <span id="clothingDisplay"></span></div>
+          <div><span>☂</span> <span id="umbrellaDisplay"></span></div>
+          <div><span>🔥</span> <span id="heatDisplay"></span></div>
+          <div><span>❄️</span> <span id="coldDisplay"></span></div>
+          <div><span>🌞</span> <span id="uvDisplay"></span></div>
+          <div><span>💧</span> <span id="humidityAdviceDisplay"></span></div>
+          <div><span>💨</span> <span id="windAdviceDisplay"></span></div>
+        </div>
+      </div>
+
+      <div class="footer">Powered by OpenWeatherMap</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
